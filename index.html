@@ -3,6 +3,7 @@
 </head>
 <link rel="icon" href="images\favicon.ico">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script>
     $(function() {
         $("#header").load("head.html");
@@ -10,9 +11,10 @@
         $("#footer").load("footer.html");
     });
 </script>
+<div id="loader"></div>
 
 <body class="layout-documentation page-layout">
-    <div id="loader"></div>
+
     <div id="header"></div>
     <div id="navbar"></div>
     <section class="animate__animated animate__fadeIn hero is-fullheight block" style="color: white; background-image: url(images/front_page_1.png); background-size: cover;">
@@ -148,11 +150,14 @@
     </section>
     <div id="footer"></div>
 </body>
-<script type="text/javascript">
+<script>
     function hideLoader() {
         $('#loading').hide();
     }
+
     $(window).ready(hideLoader);
+
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
     setTimeout(hideLoader, 20 * 1000);
 </script>
 
