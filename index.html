@@ -1,6 +1,10 @@
 <head>
     <title>SCCPL | Home</title>
 
+    <div id="loading">
+        <img id="loading-image" src="images/sccpl_white_logo.gif" alt="Loading..." />
+    </div>
+
 </head>
 <link rel="icon" href="images\favicon.ico">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -14,13 +18,9 @@
 </script>
 
 <body class="layout-documentation page-layout">
-    <div id="loading">
-        <img id="loading-image" src="images/sccpl_white_logo.gif" alt="Loading..." />
-    </div>
     <div id="header"></div>
     <div id="navbar"></div>
     <section class="animate__animated animate__fadeIn hero is-fullheight block" style="color: white; background-image: url(images/front_page_1.png); background-size: cover;">
-
         <div class="hero-body">
             <div class="">
                 <p class="is-size-1">
@@ -151,11 +151,12 @@
         </div>
     </section>
     <div id="footer"></div>
-    <script>
-        $(window).on('load', function() {
-            $('#loading').hide();
-        })
-    </script>
+
 </body>
 
 </html>
+<script>
+    $(window).on('load', function() {
+        $('#loading').hide();
+    })
+</script>
