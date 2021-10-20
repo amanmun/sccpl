@@ -1,0 +1,109 @@
+#loading {
+    background: url(images\sccpl_white_logo.gif) no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999
+}
+
+.column {
+    display: flex
+}
+
+.block:not(:last-child) {
+    margin-bottom: 5rem
+}
+
+.navid {
+    height: 8rem
+}
+
+.navbar-item {
+    color: #fff
+}
+
+#menuLink {
+    position: relative
+}
+
+.navbar-burger {
+    right: 0;
+    position: absolute;
+    color: #fff
+}
+
+#whyuscard {
+    transition: box-shadow .3s;
+    background: #fff
+}
+
+#whyuscard:hover {
+    box-shadow: 0 0 10px rgba(33, 33, 33, .2)
+}
+
+.pricing-plan {
+    transition: box-shadow .3s
+}
+
+.pricing-plan:hover {
+    box-shadow: 0 0 5px rgba(33, 33, 33, .2)
+}
+
+.button {
+    transition: ease-out .3s
+}
+
+.button:hover {
+    background-color: #3850b7;
+    color: #fff
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 0.2s
+}
+
+.bd-link:hover {
+    background-color: #eff1fa;
+    color: #3850b7
+}
+
+.steps-segment:after {
+    background-color: #3850b7
+}
+
+.steps:not(.is-hollow) .steps-marker:not(.is-hollow) {
+    background-color: #3850b7;
+    color: #fff
+}
+
+.steps:not(.is-hollow) .steps-segment.is-active .steps-marker:not(.is-hollow) {
+    background-color: #3850b7;
+    color: #fff
+}
+
+@media only screen and (max-width:768px) {
+    .navid {
+        height: 1rem
+    }
+    .navbar-item {
+        color: #363636
+    }
+    .navbar-menu {
+        height: 100vh
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

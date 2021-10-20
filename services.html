@@ -1,0 +1,117 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+<head>
+    <title>SCCPL | Services</title>
+</head>
+<link rel="icon" href="images\favicon.ico">
+
+<body class="layout-documentation page-layout">
+    <div id="loader"></div>
+    <div id="navbar"></div>
+    <section class="animate__animated animate__fadeIn hero is-fullheight block" style="color: white; background-image: url(images/services_1.png); background-size: cover;">
+        <div class="hero-body">
+            <div class="">
+                <p class="is-size-3">
+                    <strong style="color: white;">We at SCCPL provide a diverse range of services</strong>
+                </p>
+                <br>
+                <div class="buttons">
+                    <a class="button is-rounded is-large">
+                        <strong>Apply Now</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="animate__animated animate__fadeIn hero is-medium block">
+        <div class="container">
+            <div class="pricing-table is-horizontal">
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Home Loan</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Loan under Pradhan Mantri Awas Yojana (PMAY)</div>
+                        <div class="plan-item">Low-Cost Fund as per RBI norms in Home Loan</div>
+                        <div class="plan-item">Tax Benefits under Section 80C and 24</div>
+                        <div class="plan-item">Loan Tenure up to 30 years</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Loan Against Property</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Type of property may be Residential/Commercial/Industrial</div>
+                        <div class="plan-item">Loan Amount up to 75% of the property’s market value</div>
+                        <div class="plan-item">Loan tenure up to 15 years</div>
+                        <div class="plan-item">Can be also arranged for the purchase of commercial property</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Lease Rental Discounting (LRD)</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Finance to the owner of the property</div>
+                        <div class="plan-item">For those who rent out their property to corporates</div>
+                        <div class="plan-item">Borrower, Tenant, and Bank undergo agreement</div>
+                        <div class="plan-item">EMI is paid against rent received</div>
+                        <div class="plan-item">Borrower unlocks the property value</div>
+                        <div class="plan-item">The maximum Term offered is 15 years</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Business/Personal Loan</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Unsecured Loan to the businessman and salaried persons</div>
+                        <div class="plan-item">Unsecured Overdraft (OD) to the companies/firms</div>
+                        <div class="plan-item">Limit against credit card machine on the basis of daily swipe</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Working Capital - MSME</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Cash Credit / Overdraft (OD)</div>
+                        <div class="plan-item">Bill Discounting</div>
+                        <div class="plan-item">Bank Guarantee (BG)</div>
+                        <div class="plan-item">Letter of Credit (LoC)</div>
+                        <div class="plan-item">EPC/PCFC/FBD</div>
+                        <div class="plan-item">Gold metal Loan</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Project Finance</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Preparation of Project Report</div>
+                        <div class="plan-item">Market Research of the viability of the project</div>
+                        <div class="plan-item">Term Loan</div>
+                        <div class="plan-item">ECB</div>
+                        <div class="plan-item">Capex/LC</div>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="plan-header has-background-link-dark" style="color: white;">Real Estate Builder Finance</div>
+                    <div class="plan-items">
+                        <div class="plan-item">Residential Projects</div>
+                        <div class="plan-item">Commercial Projects</div>
+                        <div class="plan-item">Hospitals</div>
+                        <div class="plan-item">Hotels</div>
+                        <div class="plan-item">Schools</div>
+                        <div class="plan-item">Unsold Stock Inventory</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+<script type="text/javascript">
+    function hideLoader() {
+        $('#loading').hide();
+    }
+    $(window).ready(hideLoader);
+    setTimeout(hideLoader, 20 * 1000);
+</script>
+
+</html>

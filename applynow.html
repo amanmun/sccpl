@@ -1,0 +1,121 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+<head>
+    <title>SCCPL | Apply Now</title>
+</head>
+<link rel="icon" href="images\favicon.ico">
+
+<body class="layout-documentation page-layout">
+    <div id="loader"></div>
+    <div id="navbar"></div>
+    <section class="animate__animated animate__fadeIn hero is-fullheight block" style="color: white; background-image: url(images/applynow_1.png); background-size: cover;">
+        <div class="hero-body">
+            <div class="">
+                <p class="is-size-3">
+                    <strong style="color: white;">Please fill the below attached form</strong>
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <div class="container block">
+        <form id="myform">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="text" name="entry.2102473450" placeholder="Your Name goes here">
+                    <span class="icon is-left">
+                    <i class="fas fa-signature"></i>
+                </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Phone Number</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="number" name="entry.1113084929" placeholder="Your Mobile or Landline number goes here">
+                    <span class="icon is-left">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">E-Mail</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="email" name="entry.76352569" placeholder="your e-mail id">
+                    <span class="icon is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">How did you come to know about us?</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="text" name="entry.1423036107" placeholder="Person and Organization">
+                    <span class="icon is-left">
+                    <i class="fas fa-network-wired"></i>
+                </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Please try and be as brief as possible" name="entry.278681078"></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="submit" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button type="reset" class="button is-link is-light">Reset</button>
+                </div>
+            </div>
+            <p class="help">*Please note, we at <strong>SCCPL</strong> respect your privacy, and the above mentioned information would be used only to connect with you. We promise not to spam you.</p>
+        </form>
+        <div id="form-success">
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script type="text/javascript">
+    function hideLoader() {
+        $('#loading').hide();
+    }
+    $(window).ready(hideLoader);
+    setTimeout(hideLoader, 20 * 1000);
+
+    $('#myform').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScgD0gAvBxsrGZmEykHdXFLkQ1M0EoNym5zLYAoh1p6MlatCQ/formResponse', //The public Google Form url, but replace /view with /formResponse
+            data: $('#myform').serialize(),
+            type: 'POST',
+            dataType: "json",
+            statusCode: {
+                0: function(data) {
+                    alert("The form has been submitted successfully. Now you will be redirected to the homepage.")
+                    setTimeout(function() {
+                        window.location.replace('index.html');
+                    }, 1);
+                },
+                200: function(data) {
+                    alert("The form has been submitted successfully. Now you will be redirected to the homepage.")
+                    setTimeout(function() {
+                        window.location.replace('index.html');
+                    }, 1);
+                },
+                403: function(data) {
+                    alert('Oh no! something went wrong. we should check our code to make sure everything matches with Google');
+                }
+            }
+        });
+    });
+</script>
+
+</html>

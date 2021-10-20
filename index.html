@@ -1,0 +1,159 @@
+<head>
+    <title>SCCPL | Home</title>
+</head>
+<link rel="icon" href="images\favicon.ico">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $("#header").load("head.html");
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+<body class="layout-documentation page-layout">
+    <div id="loader"></div>
+    <div id="header"></div>
+    <div id="navbar"></div>
+    <section class="animate__animated animate__fadeIn hero is-fullheight block" style="color: white; background-image: url(images/front_page_1.png); background-size: cover;">
+
+        <div class="hero-body">
+            <div class="">
+                <p class="is-size-1">
+                    <strong style="color: white;">Innovative Financial Solutions</strong>
+                </p>
+                <br>
+                <div class="buttons">
+                    <a class="button is-rounded is-large" href="./applynow.php">
+                        <strong>Apply Now</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-short container is-max-widescreen block">
+        <p class="is-size-1" style="text-align: center;"><strong style="color: black;">Why Us?</strong></p>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <div class="card" id="whyuscard">
+                    <header class="card-header">
+                        <h1 class="card-header-title">
+                            SCCPL Offers
+                        </h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            We bring you a wide range of tailored loan products to choose from. At SCCPL, we serve you as your trusted financial advisor and provide you with a one-stop finance destination to meet all your financial needs.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="whyuscard">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Unbiased Advice
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            We believe strongly in providing the best services to customers at all times. We guide customers to help them smoothen the process and assist customers in getting finance needs fulfilled.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="whyuscard">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Personalized Services
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Serving our customers has always been our motto, and we provide value-added personalized services to our customers and assist them in every possible way in fulfilling their financial needs.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="card" id="whyuscard">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Customized Services
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            SCCPL serves you as a trusted Finance partner and provides customers customized offers and options to meet their financial requirements.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="whyuscard">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Paperwork Assistance
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Paperwork could be very tedious to manage. Paperwork is very critical in the process of loan syndication. We strive to make it easy for you. We at SCCPL give you the extra help you need with your personal or professional paperwork.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="notification is-link p-6" style="text-align: center;">
+            <p class="is-size-1">
+                <strong style="color: white;">
+                    The SCCPL Advantage
+                </strong>
+            </p>
+            <br>
+            <br>
+            <nav class="level">
+                <div class="level-item has-text-centered p-2">
+                    <div>
+                        <p class="heading"><strong>Clients in MSME Segment</strong></p>
+                        <h2 class="title has-text-white is-size-2-widescreen">300+</h2>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered p-2">
+                    <div>
+                        <p class="heading"><strong>Financial Institutions all over India</strong></p>
+                        <h2 class="title has-text-white is-size-2-widescreen">30+</h2>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered p-2">
+                    <div>
+                        <p class="heading"><strong>Referral Partners</strong></p>
+                        <h2 class="title has-text-white is-size-2-widescreen">40+</h2>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+<script type="text/javascript">
+    function hideLoader() {
+        $('#loading').hide();
+    }
+    $(window).ready(hideLoader);
+    setTimeout(hideLoader, 20 * 1000);
+</script>
+
+</html>
