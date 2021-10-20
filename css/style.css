@@ -1,11 +1,19 @@
-.loader {
+#loading {
     position: fixed;
-    left: 0px;
-    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    z-index: 9999;
-    background: url("images/sccpl_white_logo.gif") 50% 50% no-repeat #f9f9f9;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#loading-image {
+    z-index: 100;
 }
 
 .column {
