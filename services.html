@@ -3,6 +3,7 @@
     $(function() {
         $("#navbar").load("navbar.html");
         $("#footer").load("footer.html");
+        $("#loading").load("loader.html");
     });
 </script>
 
@@ -106,12 +107,6 @@
     </section>
     <div id="footer"></div>
 </body>
-<script type="text/javascript">
-    function hideLoader() {
-        $('#loading').hide();
-    }
-    $(window).ready(hideLoader);
-    setTimeout(hideLoader, 20 * 1000);
-</script>
+
 
 </html>
